@@ -1,18 +1,18 @@
 import api from "./cat-api.js";
-// import SlimSelect from 'slim-select';
+import SlimSelect from 'slim-select';
 import Notiflix from 'notiflix';
 
 const select = document.querySelector(".breed-select");
 select.classList.add("hidden");
-// new SlimSelect({
-//     select: select,
-//     settings: {
-//         alwaysOpen: false,
-//         openPosition: "down",
-//         showSearch: false,
-//         closeOnSelect: true,
-//     }
-// });
+new SlimSelect({
+    select: select,
+    settings: {
+        alwaysOpen: false,
+        openPosition: "down",
+        showSearch: false,
+        closeOnSelect: true,
+    }
+});
 
 const loader = document.querySelector(".loader");
 const errorMessage = document.querySelector(".error");
