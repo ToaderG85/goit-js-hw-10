@@ -1,0 +1,45 @@
+.hidden {
+    display: none;
+}
+
+.breed-select {
+    width: 200px;
+}
+
+.option {
+    background-color: gray;
+    color: white;
+}
+
+.cat-data {
+    display: flex;
+    margin-top: 70px;
+}
+
+.breed-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 400px;
+    text-align: justify;
+}
+
+span {
+   font-weight: bold;
+}
+
+.loader-message {
+    display: inline-block;
+    z-index: 5;
+    top: 35px;
+    height: 6px;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 250px;
+    position: absolute;    
+    background: linear-gradient(#FF3D00 100%, transparent 0) no-repeat;
+    background-size: 0% auto;
+    animation: 750ms lineGrow linear infinite;
+  }
+
+  @keyframes lineGrow {to {  background-size: 100% auto}}
