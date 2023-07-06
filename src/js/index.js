@@ -35,7 +35,7 @@ api.fetchBreeds()
     })
     .catch(err => {
         loader.classList.add("hidden");
-        errorMessage.classList.remove("hidden");
+        Notiflix.Notify.failure("Oops! Something went wrong! Try reloading the page!");
     });
 
 select.addEventListener("change", (event) => {
@@ -55,7 +55,7 @@ select.addEventListener("change", (event) => {
     })
     .catch (err => {
         loader.classList.add("hidden");
-        errorMessage.classList.remove("hidden");
+        Notiflix.Notify.failure("Oops! Something went wrong! Try reloading the page!");
     });
 });
 
